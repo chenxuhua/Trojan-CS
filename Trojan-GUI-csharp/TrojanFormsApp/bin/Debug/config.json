@@ -2,10 +2,10 @@
   "run_type": "client",
   "local_addr": "127.0.0.1",
   "local_port": 1088,
-  "remote_addr": "xuhua.co",
+  "remote_addr": "example.com",
   "remote_port": "443",
   "password": [
-    "28f37bb2"
+    "password"
   ],
   "append_payload": true,
   "log_level": 1,
