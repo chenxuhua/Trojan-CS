@@ -72,10 +72,10 @@
             this.ProjectAddress_LinkLabel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ProjectAddress_LinkLabel.Location = new System.Drawing.Point(283, 134);
             this.ProjectAddress_LinkLabel.Name = "ProjectAddress_LinkLabel";
-            this.ProjectAddress_LinkLabel.Size = new System.Drawing.Size(181, 17);
+            this.ProjectAddress_LinkLabel.Size = new System.Drawing.Size(243, 17);
             this.ProjectAddress_LinkLabel.TabIndex = 3;
             this.ProjectAddress_LinkLabel.TabStop = true;
-            this.ProjectAddress_LinkLabel.Text = "https://github.com/chenxuhua";
+            this.ProjectAddress_LinkLabel.Text = "https://github.com/chenxuhua/Trojan-CS";
             this.ProjectAddress_LinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ProjectAddress_LinkLabel_LinkClicked);
             // 
             // AboutForm

@@ -19,7 +19,7 @@ namespace TrojanFormsApp
 
         private void ProjectAddress_LinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/chenxuhua");
+            System.Diagnostics.Process.Start("https://github.com/chenxuhua/Trojan-CS");
         }
     }
 }

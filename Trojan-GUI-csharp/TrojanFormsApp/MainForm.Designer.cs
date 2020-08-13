@@ -42,7 +42,6 @@
             this.菜单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Start_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Stop_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Restart_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.Exit_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.启动ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +51,6 @@
             this.NetworkConnectivityDiagnosis_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ServerLatencyTest_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.配置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ChangeLocalPort_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ResetConfigFile_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.About_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,7 +68,7 @@
             // 
             // Switch_Button
             // 
-            this.Switch_Button.Location = new System.Drawing.Point(319, 234);
+            this.Switch_Button.Location = new System.Drawing.Point(312, 234);
             this.Switch_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Switch_Button.Name = "Switch_Button";
             this.Switch_Button.Size = new System.Drawing.Size(88, 32);
@@ -165,7 +163,7 @@
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(459, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(449, 25);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -174,7 +172,6 @@
             this.菜单ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Start_ToolStripMenuItem,
             this.Stop_ToolStripMenuItem,
-            this.Restart_ToolStripMenuItem,
             this.toolStripSeparator1,
             this.Exit_ToolStripMenuItem});
             this.菜单ToolStripMenuItem.Name = "菜单ToolStripMenuItem";
@@ -184,33 +181,26 @@
             // Start_ToolStripMenuItem
             // 
             this.Start_ToolStripMenuItem.Name = "Start_ToolStripMenuItem";
-            this.Start_ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.Start_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Start_ToolStripMenuItem.Text = "运行";
             this.Start_ToolStripMenuItem.Click += new System.EventHandler(this.Start_ToolStripMenuItem_Click);
             // 
             // Stop_ToolStripMenuItem
             // 
             this.Stop_ToolStripMenuItem.Name = "Stop_ToolStripMenuItem";
-            this.Stop_ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.Stop_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Stop_ToolStripMenuItem.Text = "停止";
             this.Stop_ToolStripMenuItem.Click += new System.EventHandler(this.Stop_ToolStripMenuItem_Click);
-            // 
-            // Restart_ToolStripMenuItem
-            // 
-            this.Restart_ToolStripMenuItem.Name = "Restart_ToolStripMenuItem";
-            this.Restart_ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.Restart_ToolStripMenuItem.Text = "重启";
-            this.Restart_ToolStripMenuItem.Click += new System.EventHandler(this.Restart_ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(97, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // Exit_ToolStripMenuItem
             // 
             this.Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
-            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Exit_ToolStripMenuItem.Text = "退出";
             this.Exit_ToolStripMenuItem.Click += new System.EventHandler(this.Exit_ToolStripMenuItem_Click);
             // 
@@ -262,24 +252,17 @@
             // 配置ToolStripMenuItem
             // 
             this.配置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ChangeLocalPort_ToolStripMenuItem,
             this.ResetConfigFile_ToolStripMenuItem});
             this.配置ToolStripMenuItem.Name = "配置ToolStripMenuItem";
             this.配置ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.配置ToolStripMenuItem.Text = "配置";
-            // 
-            // ChangeLocalPort_ToolStripMenuItem
-            // 
-            this.ChangeLocalPort_ToolStripMenuItem.Name = "ChangeLocalPort_ToolStripMenuItem";
-            this.ChangeLocalPort_ToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.ChangeLocalPort_ToolStripMenuItem.Text = "修改本地端口";
-            this.ChangeLocalPort_ToolStripMenuItem.Click += new System.EventHandler(this.ChangeLocalPort_ToolStripMenuItem_Click);
             // 
             // ResetConfigFile_ToolStripMenuItem
             // 
             this.ResetConfigFile_ToolStripMenuItem.Name = "ResetConfigFile_ToolStripMenuItem";
             this.ResetConfigFile_ToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.ResetConfigFile_ToolStripMenuItem.Text = "重置 config.json 配置文件";
+            this.ResetConfigFile_ToolStripMenuItem.Click += new System.EventHandler(this.ResetConfigFile_ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -357,7 +340,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 304);
+            this.ClientSize = new System.Drawing.Size(449, 304);
             this.Controls.Add(this.LocalPort_Label);
             this.Controls.Add(this.LocalPort_TextBox);
             this.Controls.Add(this.RunningStatus_Label);
@@ -403,7 +386,6 @@
         private System.Windows.Forms.ToolStripMenuItem 网络ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem NetworkConnectivityDiagnosis_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 配置ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ChangeLocalPort_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem About_ToolStripMenuItem;
         private System.Windows.Forms.Label Prot_Label;
@@ -416,7 +398,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ShowMainForm_NotifyIconStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Exit_NotifyIconToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem Restart_ToolStripMenuItem;
         private System.Windows.Forms.TextBox LocalPort_TextBox;
         private System.Windows.Forms.Label LocalPort_Label;
         private System.Windows.Forms.Label RunningStatus_Label;

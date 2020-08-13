@@ -84,11 +84,13 @@ namespace TrojanFormsApp
             string remote_addr = ServerDomain_TextBox.Text;
             string remote_port = ServerProt_TextBox.Text;
             string password = ServerPassword_TextBox.Text;
+            string local_port = LocalPort_TextBox.Text;
 
             //修改JObject的值
             ConfigJson["remote_addr"] = remote_addr;
             ConfigJson["remote_port"] = remote_port;
             ConfigJson["password"][0] = password;
+            ConfigJson["local_port"] = local_port;
 
             //将JObject写入到本地文件
             File.WriteAllText("config.json", ConfigJson.ToString());
@@ -191,13 +193,6 @@ namespace TrojanFormsApp
                 EngineStartup();
             }
 
-        }
-
-        private void ChangeLocalPort_ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LocalPortForm dlg = new LocalPortForm();
-            dlg.ShowDialog(this);
-            dlg.Dispose();
         }
 
         private void StratChome_ToolStripMenuItem_Click(object sender, EventArgs e)
